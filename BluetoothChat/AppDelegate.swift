@@ -16,10 +16,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
-        var name = UserDefaults().string(forKey: "name") ?? ""
+        let name = UserDefaults().string(forKey: "name") ?? ""
         
-        var controller = UIViewController()
-        if name == "" {
+        var controller: UIViewController
+        
+        if name.isEmpty {
         controller = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "login")
         }
         else {

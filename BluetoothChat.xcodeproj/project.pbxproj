@@ -15,7 +15,6 @@
 		7465F1192191AA8D003D3265 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7465F1182191AA8D003D3265 /* Constants.swift */; };
 		7465F11F2191D413003D3265 /* ChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7465F11E2191D413003D3265 /* ChatCell.swift */; };
 		74841B342191F40900A8A0B4 /* MessageOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74841B332191F40900A8A0B4 /* MessageOptions.swift */; };
-		74841B362193264900A8A0B4 /* AlertClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74841B352193264900A8A0B4 /* AlertClass.swift */; };
 		74841B38219331C200A8A0B4 /* SetNameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74841B37219331C200A8A0B4 /* SetNameController.swift */; };
 /* End PBXBuildFile section */
 
@@ -30,7 +29,6 @@
 		7465F1182191AA8D003D3265 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		7465F11E2191D413003D3265 /* ChatCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatCell.swift; sourceTree = "<group>"; };
 		74841B332191F40900A8A0B4 /* MessageOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageOptions.swift; sourceTree = "<group>"; };
-		74841B352193264900A8A0B4 /* AlertClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertClass.swift; sourceTree = "<group>"; };
 		74841B37219331C200A8A0B4 /* SetNameController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetNameController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -65,7 +63,6 @@
 			isa = PBXGroup;
 			children = (
 				7465F10221919FDB003D3265 /* AppDelegate.swift */,
-				74841B352193264900A8A0B4 /* AlertClass.swift */,
 				7465F1182191AA8D003D3265 /* Constants.swift */,
 				7465F1162191A6EE003D3265 /* ChatViewController.swift */,
 				7465F11E2191D413003D3265 /* ChatCell.swift */,
@@ -156,7 +153,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				7465F1172191A6EE003D3265 /* ChatViewController.swift in Sources */,
-				74841B362193264900A8A0B4 /* AlertClass.swift in Sources */,
 				74841B38219331C200A8A0B4 /* SetNameController.swift in Sources */,
 				7465F11F2191D413003D3265 /* ChatCell.swift in Sources */,
 				7465F10321919FDB003D3265 /* AppDelegate.swift in Sources */,
@@ -310,7 +306,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TL778XG9XW;
 				INFOPLIST_FILE = BluetoothChat/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -329,7 +325,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TL778XG9XW;
 				INFOPLIST_FILE = BluetoothChat/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

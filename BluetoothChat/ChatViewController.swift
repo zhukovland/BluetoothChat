@@ -109,7 +109,6 @@ extension ChatViewController: CBCentralManagerDelegate {
     
     func centralManagerDidUpdateState(_ central: CBCentralManager) {
         
-        
         if central.state == .poweredOn {
             self.centralManager?.scanForPeripherals(withServices: [Constants.SERVICE_UUID], options: nil)
         }
@@ -124,9 +123,7 @@ extension ChatViewController: CBCentralManagerDelegate {
             let indexPath = IndexPath(row: self.massageArray.count - 1, section: 0)
             self.chat.scrollToRow(at: indexPath, at: .bottom, animated: true)
         }
-
     }
-    
 }
 
 extension ChatViewController:CBPeripheralManagerDelegate {
@@ -139,7 +136,6 @@ extension ChatViewController:CBPeripheralManagerDelegate {
         }
     }
 }
-
 
 extension ChatViewController {
     
@@ -157,15 +153,12 @@ extension ChatViewController {
     @objc func keyboardWillShow(notification: NSNotification) {
         if let keyboardSize = (notification.userInfo?[UIResponder.keyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {
                 self.view.frame.origin.y -= keyboardSize.height
-        
         }
     }
     
     @objc func keyboardWillHide(notification: NSNotification) {
         if let keyboardSize = (notification.userInfo?[UIResponder.keyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {
                 self.view.frame.origin.y += keyboardSize.height
-            
-
         }
     }
     
